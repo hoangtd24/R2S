@@ -1,0 +1,111 @@
+@use "../../assets/styles/" as *;
+
+.custom-input {
+  margin: 20px 0;
+  width: 100%;
+  text-align: left;
+  .custom-input__label {
+    font-family: $f-family;
+    font-size: $fs-14;
+    font-weight: $fw-bold-1;
+    color: $color-black-0;
+  }
+
+  .custom-input__textfield {
+    margin-top: 7px;
+    position: relative;
+
+    input {
+      font-family: $f-family;
+      border: 1px solid $primary-color;
+      border-radius: 2px;
+      width: 100%;
+      padding: 21px 12px;
+      // margin-top: 2px;
+      height: 45px;
+
+      &:hover {
+        border: 1px solid $primary-color !important;
+        box-shadow: $primary-color-1 0px 3px 8px;
+        &::placeholder {
+          color: $primary-color;
+        }
+      }
+
+      &:focus {
+        outline: $primary-color;
+        box-shadow: $primary-color-1 0px 3px 8px;
+        &::placeholder {
+          color: $primary-color;
+        }
+      }
+      &::placeholder {
+        font-family: $f-family;
+      }
+    }
+  }
+
+  .custom-input__error {
+    color: $color-red;
+    font-size: $fs-13;
+  }
+
+  .field-requirment {
+    color: red;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .visibility-icon {
+    position: absolute;
+    right: 8px;
+    top: 9px;
+    cursor: pointer;
+  }
+}
+
+.custom-input__textfield-disabled {
+  margin-top: 7px;
+  input {
+    background-color: transparent;
+    font-family: $f-family;
+    border: none;
+    border-radius: 2px;
+    width: 100%;
+    font-size: $fs-16;
+    color: #000;
+    cursor: not-allowed;
+  }
+}
+
+.visibility-icon {
+  svg {
+    color: $primary-color;
+  }
+}
+
+.fileSV-container > input[type="file"] {
+  display: none;
+}
+
+.file--upload-content {
+  display: flex;
+  width: 145px;
+  height: 58px;
+  border: 1px solid $color-black-0;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-color-1;
+  }
+}
+
+.file-input {
+  display: none;
+  .custom-input__error {
+    display: inline-block !important;
+  }
+}

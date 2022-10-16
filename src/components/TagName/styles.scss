@@ -1,0 +1,20 @@
+@use '../../assets/styles/' as *;
+
+.tagName__container {
+  width: auto;
+  height: 22px;
+  padding: 0 10px;
+  border-radius: 6px;
+  background-color: $color-gray-9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 12px;
+
+  p {
+    font-size: 11px;
+    color: $color-gray-8;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,227 @@
+@use "../../../assets/styles/index.scss" as *;
+
+.post-job-form {
+  min-width: 60vw;
+}
+.form__container {
+  margin: auto;
+  padding: 30px;
+  border-radius: 2px;
+  width: 60%;
+  background-color: $color-white-0;
+  border: 0.5px solid #dedede;
+}
+
+.hr-post {
+  &__container {
+    width: 100%;
+    min-height: 100vh;
+    height: max-content;
+    margin-bottom: 200px;
+
+    .custom-input .custom-input__textfield input {
+      font-family: "Public Sans", sans-serif;
+      border: 1px solid rgb(119, 119, 119);
+      border-radius: 2px;
+      width: 100%;
+      padding: 20px 12px;
+      height: 45px;
+      color: #444444;
+      font-size: 13px;
+
+      &:hover {
+        border: 1px solid $primary-color;
+        box-shadow: $primary-color-1 0 3px 8px;
+      }
+    }
+
+    .custom-input .custom-input__textfield-disabled input {
+      font-family: "Public Sans", sans-serif;
+      border: 1px solid $primary-color;
+      border-radius: 2px;
+      width: 100%;
+      padding: 20px 12px;
+      height: 45px;
+      color: #444444;
+      font-size: 13px;
+      opacity: 0.6;
+    }
+
+    .custom-input .custom-input__textfield textarea {
+      font-family: "Public Sans", sans-serif;
+      border: 1px solid $primary-color !important;
+      border-radius: 2px;
+      width: 100%;
+      padding: 20px 12px;
+
+      &:hover {
+        border: 1px solid $primary-color;
+        box-shadow: $primary-color-1 0 3px 8px;
+      }
+    }
+  }
+
+  &__form {
+    margin: auto;
+    background-color: $color-white-0;
+    width: 80%;
+
+    .hr-post__heading {
+      display: flex;
+
+      & svg,
+      h2 {
+        color: $primary-color;
+      }
+
+      align-items: center;
+      gap: 4px;
+
+      >svg {
+        margin: 5px !important;
+      }
+
+      >.hr-post__title {
+        border: none !important;
+      }
+    }
+
+    .row-3-col {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 35px;
+
+      .hr-post__select-location {
+        flex-basis: 32%;
+      }
+
+      div.custom-input {
+        margin-top: 0;
+        flex-basis: 28%;
+
+        input {
+          height: 45px !important;
+        }
+      }
+
+      >.custom-input {
+        margin: 0;
+      }
+    }
+
+    .hr-post-title {
+      margin-bottom: 35px;
+    }
+
+    .row-2-col {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 35px;
+
+      >.hr-post__select {
+        flex-basis: 49%;
+      }
+
+      >div.custom-input {
+        flex-basis: 49%;
+        margin: 0 !important;
+
+        input {
+          height: 45px;
+        }
+      }
+    }
+
+    .hr-post__select {
+      flex-basis: 33.33%;
+
+      >.custom-input {
+        margin: 0 0 35px 0;
+      }
+    }
+
+    .hr-post__textarea {
+      margin-bottom: 35px;
+
+      textarea {
+        font-family: "Public Sans", sans-serif;
+        border: 1px solid $primary-color;
+        border-radius: 2px;
+        height: 150px;
+      }
+    }
+
+    .hr-post__action {
+      display: flex;
+      justify-content: right;
+    }
+  }
+
+  &__heading {
+    display: flex;
+  }
+
+  &__heading {
+    margin-top: 25px;
+  }
+
+  &__salary-range {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .custom-input {
+      width: 49%;
+      margin: 0;
+
+      &__textfield {
+        input {
+          height: 45px;
+        }
+      }
+    }
+
+    .custom-select__textfield {
+      margin-top: 7px;
+    }
+  }
+}
+
+.hr-post__sub-description {
+  margin-top: 2px;
+  font-size: 12px;
+  font-style: italic;
+  color: #999;
+}
+
+input#title {
+  height: 20px;
+}
+
+label {
+  font-family: "Public Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #29303b;
+}
+
+.salary-select-field {
+  width: 100%;
+}
+
+.title-requirement {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: right;
+  margin-top: 16px;
+}
+
+.field-requirment {
+  color: red;
+  font-weight: 700;
+  font-size: 16px;
+}

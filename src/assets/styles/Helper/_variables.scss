@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto:wght@300;400;500;700;900&display=swap");
+// variable color
+// $primary-color-1: rgb(232, 246, 245);
+$primary-color-1: #f6f6f6;
+// $primary-color-2: rgb(57, 169, 165);
+$primary-color-2: #04bf8a;
+// $primary-color: rgb(57, 169, 165);
+$primary-color: #04bf8a;
+$primary-color-background: #f5f5f5;
+$primary-color-background-2: #e6eefa;
+// $primary-color: #00B074;
+// $primary-color-1: rgba(0, 171, 85, 0.08);
+// $primary-color-2: rgb(0, 171, 85);
+// $primary-color-3: #329d9c;
+// $primary-color: #3949ab;
+// $primary-color-1: #e8eaf6;
+$color-black-0: #29303b; // default
+$color-black-3: #000;
+$color-white-0: #fff; //default
+$color-red: #ff5c58;
+$color-red-0: #ec5252;
+$color-red-1: #521822;
+$color-red-2: #992337;
+$color-purple: #6e1a52;
+$color-gray: #f5f5f5;
+$color-gray-1: rgba(20, 23, 28, 0.05);
+$color-gray-2: #a1a7b3;
+$color-gray-3: #cacbcc;
+$color-gray-4: #686f7a;
+$color-gray-5: #f7f8fa;
+$color-gray-6: #dedfe0;
+$color-gray-7: #dedede;
+$color-gray-8: #7d7d7d;
+$color-gray-9: #f3f9fc;
+$color-black-light: #505763;
+$color-white-cream: #f2f3f5;
+$color-black-dark: rgba(20, 23, 28, 0.1);
+$color-yellow: #ffbb33;
+$color-yellow-1: #f4c150;
+$color-blue: #007791;
+$color-trans: transparent;
+
+//text color
+$text-color: #212121;
+$text-color-1: #868585;
+
+// variable font-size
+$fs-14: 14px;
+$fs-16: 16px; //default
+$fs-12: 12px;
+$fs-15: 15px;
+$fs-14: 14px;
+$fs-13: 13px;
+$fs-18: 18px;
+$fs-20: 20px;
+$fs-24: 24px;
+$fs-30: 30px;
+$fs-40: 40px;
+
+//variable margin
+$mg-0: 2px;
+$mg-1: 10px;
+$mg-2: 25px;
+
+//variable border-radius
+$border-radius: 2px;
+
+//variable padding
+$pd-0: 5px; //default
+$pd-1: 10px;
+$pd-2: 20px;
+
+//variable line-height
+$line-height-0: 1.43; //default
+
+$f-family: "Public Sans", sans-serif;
+$f-family-0: "Poppins", sans-serif;
+$f-family-1: "Inter", sans-serif;
+// Roboto, sans-serif
+
+// Sidebar width
+$sb-width: 280px;
+
+//variable font-weight
+$fw-normal: normal;
+$fw-bold-0: 600;
+$fw-bold-1: 700;
+$fw-bold-2: 900;
+$fw-bold: bold;
+
+//break points
+// $breakpoints:(
+//     'extra-large': 1200px,
+//     'large' : 900px,
+//     'medium' : 678px,
+//     'small' : 576px,
+// );
+
+$large: 900px;
+$extra-large: 1200px;
+$mobile-width: 740px;
+$tablet-width: 1024px;
+$pc-low-width: 1136px;

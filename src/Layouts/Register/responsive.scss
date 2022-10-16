@@ -1,0 +1,54 @@
+@use "../../assets/styles/" as *;
+
+@media only screen and (min-width: 740px) and (max-width: 1040px) {
+    .register-container {
+      width: 70% !important;
+    }
+  
+    .reg-candidate__form--name {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+  
+      & .custom-input {
+          margin-top: -5px;
+      }
+    }
+  }
+
+
+@media only screen and (min-width: 500px) and (max-width: 740px) {
+  .register-container {
+    width: 80% !important;
+    padding: 40px !important;
+  }
+
+  .reg-candidate__form--name {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    & .custom-input {
+        margin-top: -5px;
+    }
+  }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 985px) {
+  .register__container__form--name {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .register-container {
+    width: 90% !important;
+    padding: 40px !important;
+  }
+
+  .reg-candidate__form--name {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}

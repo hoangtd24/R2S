@@ -1,0 +1,109 @@
+@use "../../../../assets/styles/" as *;
+
+.candidate-list__wrapper {
+  min-width: 550px;
+  height: 632px;
+  margin-top: 14px;
+  position: relative;
+  .dialog-title {
+    font-size: 20px;
+  }
+
+  &.null{
+    height: auto;
+  }
+
+  .pagination__wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+}
+
+.dialog-title__list-candidate {
+  font-size: 25px !important;
+  font-weight: 600 !important;
+  font-family: "Public Sans", sans-serif;
+}
+
+.candidate-card__wrapper {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgb(0 0 0 / 24%);
+  padding: 30px 10px;
+  border-radius: 8px;
+  position: relative;
+
+  .candidate-card__avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid $primary-color;
+    margin-right: 30px;
+  }
+
+  .candidate-card__infor {
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .candidate-card__infor-name {
+        color: $primary-color;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+    }
+    .candidate-card__infor-item {
+      > span {
+        font-weight: 500;
+        margin-right: 6px;
+      }
+    }
+  }
+  .candidate-card__infor-time {
+    position: absolute;
+    right: 14px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-left: 120px;
+    > svg {
+      font-size: 14px;
+      margin-right: 2px;
+    }
+  }
+  .candidate-card__actions {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    display: flex;
+
+    .view-button__wrapper {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      margin-right: 4px;
+      cursor: pointer;
+      padding-left: 6px;
+      padding-right: 6px;
+      border: 1.5px solid #dedede;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: #0000000a;
+      }
+
+      > svg {
+        margin-right: 2px;
+        font-size: 18px;
+      }
+    }
+  }
+}

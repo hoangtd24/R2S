@@ -1,0 +1,49 @@
+@use "../../../../assets/styles/" as *;
+
+.current-user-container {
+  border-radius: 5px;
+  background-color: $color-white-0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  .current-user-wrapper {
+    width: 70%;
+    .current-user {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+      margin-top: 1rem;
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border: 1px solid $color-gray-3;
+        padding: 0.5rem 1rem;
+        .left {
+          .title {
+            font-size: 14px;
+            color: $color-gray-4;
+            margin-bottom: 0.5rem;
+          }
+          .number {
+            font-size: 16px;
+            color: $color-black-3;
+          }
+        }
+      }
+    }
+  }
+  .current-user-chart {
+    width: 28%;
+    border: 1px solid $color-gray-3;
+    border-radius: 5px;
+    .chart-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 200px;
+      width: auto;
+    }
+  }
+}

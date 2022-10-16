@@ -1,0 +1,71 @@
+@use '../../assets/styles' as *;
+
+.admin-navbar {
+  padding: 20px 20px 20px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  .admin-navbar__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .admin-navbar_show {
+      margin-left: 15px;
+      padding: 5px 7px;
+      border-radius: 5px;
+      background-color: $primary-color-1;
+      color: $primary-color;
+      &:hover {
+        background-color: $primary-color;
+        color: $color-white-0;
+      }
+    }
+
+    .admin-navbar__logo {
+      padding: 0px 60px 0px 10px;
+      // h2 {
+      //     font-size: 30px;
+      //     font-family: $f-family;
+      //     font-weight: $fw-bold;
+      // }
+      img {
+        // border-radius: 10px;
+        width: 240px;
+      }
+    }
+  }
+
+  .admin-navbar__right {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    .admin-navbar__icon-notification {
+      margin-right: 10px;
+    }
+
+    .admin-navbar__setting {
+      padding: 7px 10px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      background-color: $primary-color-1;
+      border-radius: 20px;
+
+      .admin-navbar__avatar {
+        width: 32px;
+        height: 32px;
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+.admin-navbar__icon {
+  color: $primary-color;
+  cursor: pointer;
+  &:hover {
+    transform: rotate(180deg);
+    transition: all 0.5s ease;
+  }
+}

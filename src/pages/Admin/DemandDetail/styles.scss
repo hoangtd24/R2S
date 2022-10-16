@@ -1,0 +1,22 @@
+@use '../../../assets/styles/' as *;
+
+.demand-detail {
+  &__title-container {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__content-container {
+    padding: 20px 0px;
+
+    h2 {
+      padding: 0px 20px 20px 20px;
+    }
+  }
+  &__control {
+    li {
+      list-style: none;
+      color: #000;
+    }
+  }
+}

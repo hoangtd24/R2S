@@ -1,0 +1,24 @@
+@use '../../assets/styles' as *;
+
+.statistical-card {
+  &__container {
+    width: 200px;
+    min-height: 15vh;
+    background-color: rgb(197, 197, 197);
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  &__heading-container {
+      margin-top: 15px;
+      color: $primary-color;
+  }
+
+  &__content {
+      font-weight: 600;
+  }
+}

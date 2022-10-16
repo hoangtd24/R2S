@@ -1,0 +1,7 @@
+.aboutUS {
+    display: flex;
+    flex-direction: column;
+    >span {
+        line-height: 1.6;
+    }
+}

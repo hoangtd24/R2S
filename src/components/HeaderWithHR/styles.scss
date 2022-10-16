@@ -1,0 +1,79 @@
+@use "../../assets/styles/" as *;
+.container-header__hr {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  box-shadow: 0 2px 2px -2px gray;
+}
+.menu_mobile {
+  display: none;
+}
+.header__hr {
+  background-color: $primary-color-1;
+  display: flex;
+
+  &.config {
+    .responsive-menu {
+      display: none;
+      cursor: pointer;
+      > svg {
+        font-size: 40px;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &-post {
+    display: flex;
+    align-items: center;
+    margin-right: 22px;
+    color: black;
+
+    &.active {
+      color: $primary-color !important;
+
+      > span {
+        font-weight: 700 !important;
+      }
+
+      &:hover {
+        opacity: 1 !important;
+      }
+    }
+    &-post {
+      display: flex;
+      margin-left: 10px;
+      font-size: $fs-14;
+      align-items: center;
+    }
+
+    > svg {
+      font-size: 20px;
+    }
+  }
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-config {
+      margin-right: 14px;
+    }
+  }
+  .header__hr-post {
+    &:hover {
+      opacity: 0.7;
+      transition: opacity 0.4s;
+    }
+
+    .header__hr-post-post {
+      font-weight: 400;
+    }
+  }
+}
+

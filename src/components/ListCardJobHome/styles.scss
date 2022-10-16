@@ -1,0 +1,40 @@
+@use "../../assets/styles/" as *;
+
+.filter-panel-home__wrapper {
+  width: 100%;
+  height: 695px;
+  margin-bottom: 12px;
+  overflow-y: scroll;
+  -ms-overflow-style: none !important;
+  scrollbar-width: 0 !important;
+
+  .filter-panel-home__filterPanel {
+    border-bottom: 1;
+    border-color: divider;
+    margin-bottom: 24px;
+    height: 66px;
+  }
+
+  &::-wenkit-scrollbar {
+    display: none !important;
+  }
+}
+
+.filter-panel-home__wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 740px) {
+  .onMobile {
+    padding-left: 0px;
+  }
+  .slideBarHome__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .filter-panel-home__wrapper {
+    padding: 0;
+  }
+}

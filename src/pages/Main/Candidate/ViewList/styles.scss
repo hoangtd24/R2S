@@ -1,0 +1,40 @@
+.apply__list--container {
+  width : 1110px;
+  margin: 0 auto ;
+  .header__apply {
+    background-color: #00B074;
+    padding: 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+    .header__apply-title {
+      font-size: 24px;
+      font-weight: 700;
+  
+    }
+  
+    .header__apply--des {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+  max-width: 1536px;
+  margin: 0 auto;
+
+  .section__apply {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    height: 60px;
+
+    span {
+      font-size: 18px;
+
+      span {
+        font-weight: 900;
+      }
+    }
+  }
+}

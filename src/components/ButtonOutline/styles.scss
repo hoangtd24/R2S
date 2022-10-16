@@ -1,0 +1,29 @@
+@use '../../assets/styles/' as *;
+.btn-outline {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border: none;
+  font-family: $f-family;
+  cursor: pointer;
+  @include button(
+    13px,
+    700,
+    12px,
+    32px,
+    $color-white-0,
+    $color-white-0,
+    $primary-color,
+    $primary-color
+  );
+  outline: 2px solid $primary-color;
+  .button__icon {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+}

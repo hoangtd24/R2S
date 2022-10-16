@@ -1,0 +1,87 @@
+@use "../../assets/styles/" as *;
+
+.select-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .select-label {
+    font-size: $fs-14;
+    margin-bottom: 7px;
+    font-family: $f-family;
+    color: #29303b;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .select-error {
+    text-align: left;
+    color: $color-red;
+    font-size: $fs-13;
+  }
+
+  .select-placeholder {
+    text-align: left;
+    color: #777777;
+  }
+}
+
+.select-formControl {
+  height: 45px !important;
+
+  &:hover {
+    box-shadow: $primary-color-1 0 3px 8px;
+  }
+
+  & div {
+    height: 100%;
+
+    & div {
+      color: #111111;
+      font-size: 13px;
+      text-align: left;
+    }
+    & input {
+      width: 0%;
+    }
+  }
+}
+
+.select-form {
+  & .select-formControl {
+    font-family: "Public Sans", sans-serif;
+    outline: none !important;
+    &:hover {
+      border-color: $primary-color;
+    }
+    .select-field {
+      border: 1px solid rgb(119, 119, 119);
+      border-radius: 2px;
+      border :  1px solid $primary-color;
+
+      &:hover {
+        border-color: $primary-color !important;
+        .select-placeholder {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+#timeStart,
+#timeEnd {
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.field-requirment {
+  color: red;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-width: 0px !important;
+}

@@ -1,0 +1,61 @@
+@use "../../../../assets/styles/" as *;
+
+.hr-post__wrapper {
+  min-height: 100vh;
+  position: relative;
+  .hr-post__list-bt {
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+    margin-bottom: 24px;
+  }
+
+  .hr-post-list__content {
+    display: flex;
+    padding: 0 50px;
+
+    .hr-post-list__statistic {
+      flex-basis: 40%;
+      margin-right: 24px;
+    }
+
+    .filter-panel-home__wrapper {
+      flex-basis: 60%;
+      padding-left: 0;
+
+      .tabPanel {
+        height: 78vh;
+        border-radius: 0px;
+      }
+    }
+
+    .hrpost__list {
+      display: flex;
+      height: 80vh;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+      overflow-y: scroll;
+    }
+  }
+
+  .MuiTabs-flexContainer {
+    background-color: #ffffff;
+    padding: 4px 8px;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+  }
+
+  .MuiButtonBase-root {
+    max-width: none !important;
+  }
+
+  .pagination__wrapper {
+    display: flex;
+    justify-content: right;
+
+    > .pagination {
+      padding-right: 50px;
+    }
+  }
+}

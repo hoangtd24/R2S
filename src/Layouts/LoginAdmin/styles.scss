@@ -1,0 +1,14 @@
+@use "../../assets/styles" as *;
+
+.login-admin-layout {
+  width: 100%;
+  min-height: 100vh;
+  height: max-content;
+  background-color: $primary-color;
+  text-align: center;
+}
+
+.login-admin-container-wrapper {
+  padding: 67px 0px;
+  background-color: $primary-color-background;
+}

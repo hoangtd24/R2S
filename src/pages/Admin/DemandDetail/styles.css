@@ -1,0 +1,19 @@
+@use '../../../assets/styles/' as *;
+.demand-detail__title-container {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.demand-detail__content-container {
+  padding: 20px 0px;
+}
+
+.demand-detail__content-container h2 {
+  padding: 0px 20px 20px 20px;
+}
+
+.demand-detail__control li {
+  list-style: none;
+  color: #000;
+}
+/*# sourceMappingURL=styles.css.map */

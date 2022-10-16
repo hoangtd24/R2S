@@ -1,0 +1,47 @@
+@use "../../../../assets/styles/" as *;
+
+.new-user-container {
+  margin-top: 1rem;
+  background-color: $color-white-0;
+  padding: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  .new-user {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    &__item {
+      width: 32%;
+      border-radius: 5px;
+      border: 2px solid $color-gray-3;
+      padding: 0.5rem 1rem;
+      &.active {
+        border: 2px solid $primary-color-2;
+      }
+      .title {
+        font-size: 15px;
+        color: $color-gray-4;
+      }
+      .number {
+        font-size: 16px;
+        color: $color-black-3;
+      }
+      .value-change {
+        color: $color-gray-4;
+        font-size: 12px;
+        .up {
+            color: $primary-color-2;
+        }
+        .down {
+            color: $color-red-0;
+        }
+        span {
+            font-size: 15px;
+        }
+      }
+    }
+  }
+  .new-user-chart {
+    margin-top: 1rem;
+  }
+}

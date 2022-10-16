@@ -1,0 +1,16 @@
+@use "../../assets/styles" as *;
+
+.listButton {
+  svg {
+    color: $primary-color;
+  }
+}
+
+.MuiListItemButton-root {
+}
+
+.MuiList-root {
+  .MuiTypography-root.MuiTypography-body1.MuiListItemText-primary {
+    font-family: $f-family;
+  }
+}

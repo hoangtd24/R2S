@@ -1,0 +1,13 @@
+@use '../../assets/styles' as *;
+
+.statistic-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px 24px;
+    margin-bottom: 24px;
+  .statistic-detail {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}

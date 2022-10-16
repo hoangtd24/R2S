@@ -1,0 +1,34 @@
+@use "../../../assets/styles/" as *;
+
+.profile-form__wrapper {
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  padding: 1rem 1rem;
+  .profile-form__content {
+    width: 100%;
+    .profile-form__content-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      .custom-input .custom-input__textfield input {
+        padding: 8px 12px;
+      }
+    }
+  }
+}
+
+.profile-form__action {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  .profile-form__action-btn {
+    padding: 4px 60px;
+  }
+}

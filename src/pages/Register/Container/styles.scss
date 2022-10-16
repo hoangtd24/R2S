@@ -1,0 +1,39 @@
+@use "../../../assets/styles/index.scss" as *;
+
+.register__container {
+  width: 100%;
+  &__form {
+    width: 100%;
+    &--name {
+      width: 100%;
+      display: flex;
+      align-items: baseline;
+      gap: 1rem
+    }
+    
+    > .select-form {
+      margin-bottom: 20px;
+    }
+    &--action {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btns {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .reg-candidate__title-infor {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+}
+.custom_req_can {
+  margin-top: -8px;
+}

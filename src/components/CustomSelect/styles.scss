@@ -1,0 +1,39 @@
+@use "../../assets/styles/" as *;
+
+.custom-select {
+  &__wrapper {
+    height: 45px;
+    width: 100%;
+    .select {
+      font-family: "Public Sans", sans-serif;
+      border: 1px solid $primary-color;
+      border-radius: 2px;
+      width: 100%;
+      padding: 0px 8px;
+      margin-top: 7px;
+      height: 100%;
+      width: 100%;
+      outline: none;
+      cursor: pointer;
+
+      &:required:invalid {
+        color: #777777;
+      }
+    }
+
+    .custom-input__error {
+      color: $color-red;
+      font-size: $fs-13;
+    }
+  }
+  &__label {
+    font-size: $fs-14;
+    font-family: $f-family;
+    color: #29303b;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .custom-input__error {
+  }
+}

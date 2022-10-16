@@ -1,0 +1,55 @@
+@use '../../assets/styles/' as *;
+
+.admin-layout {
+  // width: 100%;
+  .admin-layout__sidebar {
+    position: fixed;
+    top: 86px;
+    left: 0px;
+    height: 100%;
+
+    .admin-layout__sidebar-block {
+      .MuiDrawer-paper {
+        // width: 100%;
+        margin-top: 86px;
+        border: none;
+      }
+    }
+  }
+
+  .admin-layout__content {
+    .admin-layout__header {
+      background-color: $color-white-0;
+      position: fixed;
+      top: 0px;
+
+      width: 100%;
+      margin-right: 20px;
+      z-index: 1;
+    }
+    .admin-layout__main {
+      margin: 86px 20px 0px $sb-width;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 20px 30px;
+      min-height: 90vh;
+      background-color: #e8eaf6;
+    }
+  }
+
+  .MuiSvgIcon-root {
+    color: unset;
+  }
+}
+
+@media (max-width: $large) {
+  .admin-layout {
+    // width: 100%;
+
+    .admin-layout__content {
+      .admin-layout__main {
+        margin: 86px 20px 0px 20px;
+      }
+    }
+  }
+}

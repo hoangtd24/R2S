@@ -1,0 +1,25 @@
+@use "../../assets/styles/" as *;
+
+.login-form {
+  &__container {
+    width: 100%;
+    .bgcIsCheck {
+      input {
+        background-color: #04bf8a5b;
+      }
+    }
+  }
+
+  &__save-pass {
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  &__btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+}

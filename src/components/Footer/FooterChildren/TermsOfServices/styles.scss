@@ -1,0 +1,27 @@
+.footer_TermOfServices {
+  padding: 1rem 2rem;
+  > p {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    gap: 2rem;
+  }
+  > ul {
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    > li {
+      padding: 0.3rem 0;
+      line-height: 1.5rem;
+      > span {
+        display: block;
+        margin-left: 1rem;
+      }
+    }
+  }
+  > span {
+    margin: 1rem 0;
+  }
+  > h5 {
+    padding: 1rem 0;
+  }
+}

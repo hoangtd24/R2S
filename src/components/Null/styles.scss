@@ -1,0 +1,19 @@
+@use "../../assets/styles/" as *;
+
+
+.null__wrapper {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .null__img {
+        padding-top: 10px;
+        height: 80%;
+        width: 100%;
+        object-fit: contain;
+    }
+}

@@ -1,0 +1,36 @@
+@use "../../../assets/styles" as *;
+
+.total-statistic-container {
+  background-color: $color-white-0;
+  padding: 1rem;
+  border-radius: 10px;
+  .amount-wrapper {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    .amount-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      min-height: 80px;
+      width: 32%;
+      border-radius: 10px;
+      padding: 0.7rem 1rem;
+      color: $color-white-0;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+      &:nth-child(1) {
+        background-color: $primary-color-2;
+      }
+      &:nth-child(2) {
+        background-color: $color-yellow;
+      }
+      &:nth-child(3) {
+        background-color: $color-blue;
+      }
+    }
+  }
+  .total-statistic-chart {
+    margin-top: 1rem;
+  }
+}

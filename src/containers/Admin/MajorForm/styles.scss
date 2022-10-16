@@ -1,0 +1,101 @@
+@use '../../../assets/styles/' as *;
+
+.major-form {
+  padding: 0px 20px;
+  // height: 100%;
+  .major-form__container {
+    .major-form__logo {
+      padding: 30px 30px 10px 30px;
+      margin: 20px 20px 10px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+      .major-form__avatar {
+        border: 2px solid rgb(145, 158, 171);
+        margin-bottom: 20px;
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+      }
+      .major-form__control {
+        width: 100%;
+        ul {
+          li {
+            margin: 10px;
+            list-style: none;
+            .link {
+              font-family: $f-family;
+              font-size: $fs-13;
+              color: #000;
+              text-decoration: none;
+              font-weight: 600;
+            }
+          }
+        }
+        .major-form__block {
+          font-family: $f-family;
+          font-size: $fs-13;
+          margin-left: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          align-content: center;
+          font-weight: 600;
+        }
+
+        .major-form__button-edit {
+          margin-top: 10px;
+          margin-left: 30px;
+          padding: 10px 20px;
+          background-color: $primary-color;
+          color: $color-white-0;
+          border: none;
+          border-radius: 5px;
+        }
+      }
+      // input {
+      //     visibility: hidden;
+      //     // display: none;
+      // }
+    }
+
+    .major-form__input {
+      padding: 0px 20px;
+
+      .major-form__checkbox {
+        .major-form__checkbox-label {
+          font-family: $f-family;
+          font-size: $fs-13;
+          font-weight: $fw-bold-0;
+          margin-left: 5px;
+          color: rgb(145, 158, 171);
+          margin-bottom: 20px;
+        }
+        input {
+          margin-right: 5px;
+        }
+
+        label {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+
+  .major-form__submit {
+    margin-top: 20px;
+    padding: 10px;
+    // float: right
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.major-form__error {
+  margin-top: 20px;
+  color: $color-red;
+  font-size: $fs-13;
+}

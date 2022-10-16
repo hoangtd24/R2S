@@ -1,0 +1,22 @@
+@use '../../../assets/styles/' as *;
+
+.header-container {
+  .header-container__title {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    .header-container__add-button {
+      background-color: $primary-color;
+      color: $color-white-0;
+      box-shadow: 0 8px 16px 0 rgb(0 171 85 / 24%);
+    }
+  }
+
+  h1 {
+    font-family: $f-family;
+    font-size: 30px;
+    font-weight: 500;
+  }
+}

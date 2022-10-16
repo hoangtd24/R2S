@@ -1,0 +1,31 @@
+@use '../../assets/styles' as *;
+
+.avatar__image {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  object-fit: contain;
+  border: 1.5px solid rgba(0, 0, 0, 0.4);
+
+  &:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+  }
+}
+
+.title-signed {
+  padding: 6px 16px;
+  font-size: 16px;
+  font-weight: normal;
+
+  > span {
+    font-weight: 700;
+  }
+}
+
+.profile-icon {
+  color: $primary-color !important;
+  font-size: 32px !important;
+  margin-right: 8px;
+  margin-left: -4px;
+}

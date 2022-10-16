@@ -1,0 +1,19 @@
+@use '../../../assets/styles/' as *;
+.company-detail .company-detail__title-container {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.company-detail .company-detail__content-container {
+  padding: 20px 0px;
+}
+
+.company-detail .company-detail__content-container h2 {
+  padding: 0px 20px 20px 20px;
+}
+
+.company-detail .company-detail__content-container .company-detail__control li {
+  list-style: none;
+  color: #000;
+}
+/*# sourceMappingURL=styles.css.map */

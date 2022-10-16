@@ -1,0 +1,15 @@
+@use '../../assets/styles/' as *;
+
+.login-admin-form {
+  &__action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+}

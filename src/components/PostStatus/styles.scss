@@ -1,0 +1,27 @@
+@use '../../assets/styles/' as *;
+
+.post-status__container {
+  height: 34px;
+  width: auto;
+  padding: 8px 16px;
+  display: inline-block;
+  color: $color-white-0;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 16px;
+
+  .post-status__text {
+  }
+}
+
+.post-status__container.not-available {
+  background-color: rgb(201, 65, 65);
+}
+
+.post-status__container.active {
+  background-color: $primary-color;
+}
+
+.post-status__container.disable {
+  background-color: #626262;
+}

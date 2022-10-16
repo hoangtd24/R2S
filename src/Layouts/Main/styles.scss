@@ -1,0 +1,20 @@
+@use "../../assets/styles/" as *;
+
+.main__layout {
+  background-color: $primary-color-1;
+  box-sizing: border-box;
+  height: auto;
+  overflow: hidden;
+
+  .containerDetailCard {
+    height: 100%;
+  }
+
+  .MuiGrid-root.MuiGrid-item {
+    height: inherit;
+  }
+
+  &-body-outlet {
+    padding-top: 70px;
+  }
+}

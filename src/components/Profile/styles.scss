@@ -1,0 +1,328 @@
+@use "../../assets/styles/" as *;
+
+.profile__wrapper {
+  padding: 2rem 15rem;
+  width: 100%;
+  min-height: 600px;
+  gap: 45px;
+  display: flex;
+  position: relative;
+
+  //general infor
+  .user_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+    border-radius: 8px;
+
+    .user_profile {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      .user_avatar {
+        width: 200px;
+        height: 200px;
+      }
+
+      .user_name {
+      }
+
+      .user_username {
+        font-weight: 300;
+      }
+
+      .user_link {
+      }
+    }
+
+    .user_content {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      .content_span {
+        padding: 1rem;
+      }
+      .user_link_3 {
+        background-color: #fff;
+        padding: 0.5rem;
+        border-radius: 1rem;
+      }
+    }
+
+    .user_preferences {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+
+      .content_span {
+        background-color: #ccc;
+        padding: 0.5rem;
+      }
+      .content_page {
+        background-color: #fff;
+        padding: 0.5rem;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  // company
+  .company-infor__wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    .company-infor__title {
+      margin-bottom: 4px;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    .company-infor__content {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      // padding: 6rem 1rem;
+      padding: 5.5rem 16px 24px;
+
+      .company-infor__col-1 {
+        flex-basis: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .company-infor__logo {
+          width: 100%;
+          height: 170px;
+          margin-bottom: 20px;
+          object-fit: contain;
+        }
+
+        .company-infor__name {
+          font-size: 30px;
+          word-wrap: break-word;
+          font-weight: 700;
+          text-align: center;
+          margin-bottom: 15px;
+        }
+      }
+
+      .company-infor__profile {
+        .company-infor__row {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .company-infor__item {
+            padding: 0.4rem 0;
+            display: flex;
+            flex-basis: 50%;
+            font-size: 18px;
+            font-weight: 700;
+            justify-content: space-between;
+            align-items: center;
+
+            > span {
+              font-weight: 500;
+              font-size: 18px;
+              padding-right: 6px;
+              display: flex;
+              align-items: center;
+
+              > svg {
+                font-size: 26px;
+                margin-right: 4px;
+              }
+            }
+          }
+        }
+
+        .company-infor__des-company {
+          font-size: 18px;
+
+          > span {
+            font-weight: 700;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.candidate_container {
+  min-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  height: 70vh;
+  padding: 4rem 6rem;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px 4px rgb(0 0 0 / 25%);
+
+  .candidate_user {
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 100%;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 15vw;
+      border-radius: 2rem;
+      margin-left: 1rem;
+      height: 20vh;
+    }
+
+    .candidate_user-info {
+      width: 15vw;
+
+      h2 {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .btn_user {
+        padding: 4px !important;
+        background-color: transparent;
+      }
+    }
+
+    .candidate_user-actions {
+      width: 15vw;
+
+      .profile__actions {
+        display: flex;
+      }
+
+      .profile__actions-item {
+        margin: 0 10px;
+        border-radius: 6px;
+        padding: 4px 8px;
+      }
+
+      .profile__infor-username {
+        height: 100%;
+      }
+    }
+  }
+
+  .candidate_info {
+    height: 40%;
+    width: 100%;
+
+    .candidate_info_item {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 0.5rem 2rem;
+      align-items: center;
+    }
+  }
+}
+.profiles {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  .profile_header {
+    background: #4ecdc4; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #556270,
+      #4ecdc4
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #556270,
+      #4ecdc4
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    height: 200px;
+    background-color: #ccc;
+    position: relative;
+    img {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .profile_footer {
+    min-height: 373px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem 1rem 1rem;
+    .profile_click {
+      display: flex;
+      justify-content: space-around;
+      .profile_check {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 2rem;
+      }
+    }
+    .profile_handle {
+      display: flex;
+      // gap: 1.5rem;
+      margin: 1rem 0;
+      flex-direction: column;
+      .profile_children_handle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        color: $primary-color;
+
+        > a {
+          color: $primary-color;
+        }
+      }
+
+      .profile_name {
+      }
+      .profile_username {
+        margin-bottom: 1rem;
+      }
+    }
+    .profile_info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .profile_content {
+        margin-top: 0.3rem;
+        padding: 0 2rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        .profile_content_name {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

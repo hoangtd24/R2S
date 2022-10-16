@@ -1,0 +1,30 @@
+@use '../../assets/styles/' as *;
+
+.register-container {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  @include formContainer(60%);
+  &__title {
+    font-size: $fs-16;
+    font-weight: $fw-bold-1;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  &__footer {
+    margin: 40px auto 20px;
+    p {
+      font-size: $fs-13;
+      color: $color-black-0;
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.logo-register-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}

@@ -1,0 +1,206 @@
+@use "../../assets/styles/" as *;
+
+.base__information-candidate {
+  .company-name {
+    width: auto;
+    margin-top: 1rem;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(53, 53, 53);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .base__information-card {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 6px;
+    padding-bottom: 1rem;
+
+    .img-logo {
+      width: 100px;
+      height: 80px;
+      border-radius: 4px;
+      margin-left: 14px;
+      box-sizing: border-box;
+      margin-top: 16px;
+      opacity: 1;
+    }
+
+    &-detail {
+      width: fit-content;
+      height: fit-content;
+      div {
+        @include flex(center, null);
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+
+        color: #000000;
+      }
+      p {
+        padding-left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+      }
+      a {
+        padding-left: 5px;
+        color: #757575;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px !important;
+        display: flex;
+        align-items: center;
+        color: #000000;
+      }
+
+      a:hover {
+        color: $primary-color;
+      }
+      h5 {
+        display: flex;
+        align-items: center;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.intro__company {
+  &-title {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-left: 7px;
+
+    &-appling {
+      margin-bottom: 14px;
+    }
+  }
+
+  &-detail {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.button-card {
+  @include flex(center, space-around);
+  margin-top: 26px;
+}
+
+.base__information-card-detail-location-candidate {
+  h5 {
+    white-space: nowrap;
+    margin-bottom: 15px;
+  }
+  align-items: inherit !important;
+}
+
+.appreciate {
+  @include flex(flex-start, space-between);
+
+  img {
+    width: 35px;
+    height: 35px;
+    margin-right: 16px;
+    border-radius: 50%;
+    margin-top: 4px;
+  }
+}
+
+.company-job-detail__card {
+  display: grid;
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, 230px);
+  justify-content: flex-start;
+}
+
+.job-applying-container {
+  width: 100%;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 705px) {
+  .company-job-detail__card {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.detail-website {
+  display: block !important;
+}
+.fix-fontSize {
+  font-size: 17px !important;
+}
+
+.fix__margin {
+  margin-bottom: 4px;
+}
+
+.fix__margin {
+  .fix_container {
+    .icon_fix {
+      margin-top: 1px;
+      font-size: 20px;
+    }
+    align-items: flex-start !important;
+    a {
+      text-align: center;
+      color: #000000 !important;
+    }
+  }
+}
+.rating {
+  padding: 1rem 0;
+  height: 23.7vh;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1050px) {
+  .base__information-candidate {
+    padding: 0 !important;
+    .company_info {
+      flex-direction: column;
+      align-items: flex-start !important;
+    }
+  }
+}

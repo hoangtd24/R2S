@@ -1,0 +1,43 @@
+@use '../../../assets/styles/' as *;
+
+.reg-hr {
+  width: 100%;
+  &__form {
+    width: 100%;
+    &--name {
+      width: 100%;
+      display: flex;
+      gap: 30px;
+      margin-bottom: -20px;
+    }
+    &--label {
+      display: block;
+      margin: 20px auto 10px;
+      font-size: $fs-15;
+      font-weight: 700;
+      width: 100%;
+      text-align: left;
+    }
+    &--select {
+      display: block;
+      padding: 15px 12px;
+      border: 1.5px solid $primary-color;
+      border-radius: 6px;
+    }
+  }
+
+  &__btns {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title-infor {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+
+}

@@ -1,0 +1,22 @@
+@mixin button(
+  $fs,
+  $fw,
+  $pd-y,
+  $pd-x,
+  $bg-color,
+  $bg-hover,
+  $color,
+  $color-hover
+) {
+  font-size: $fs;
+  font-weight: $fw;
+  padding: $pd-y $pd-x;
+  background-color: $bg-color;
+  color: $color;
+  border: none;
+
+  &:hover {
+    background-color: $bg-hover;
+    color: $color-hover;
+  }
+}

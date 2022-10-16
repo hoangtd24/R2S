@@ -1,0 +1,141 @@
+@use "../../assets/styles/" as *;
+
+.base__information {
+  .university-name {
+    width: auto;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    color: rgb(53, 53, 53);
+    line-height: 35.2px;
+  }
+  .base__information-card {
+    background-color: $color-white-0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+
+    .img-logo {
+      width: 120px;
+      height: 100px;
+      border-radius: 4px;
+      margin-left: 35px;
+      margin-right: 23px;
+      transform: translate(-30px, 15px);
+      margin-bottom: 20px;
+      opacity: 1;
+      transition: opacity 200ms;
+    }
+
+    &-detail {
+      width: fit-content;
+      height: fit-content;
+      div {
+        @include flex(center, null);
+        font-size: 18px;
+      }
+      p {
+        padding-left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      a {
+        padding-left: 5px;
+        color: $primary-color-2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h5 {
+        transform: translateY(5px);
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.intro__university {
+  &-title {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-left: 7px;
+
+    &-appling {
+      margin-bottom: 14px;
+    }
+  }
+
+  &-detail {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.button-card {
+  @include flex(center, space-around);
+  margin-top: 26px;
+}
+
+.base__information-card-detail-location {
+  h5 {
+    white-space: nowrap;
+    margin-bottom: 15px;
+  }
+  align-items: baseline !important;
+}
+
+.appreciate {
+  @include flex(center, space-between);
+
+  img {
+    width: 35px;
+    height: 35px;
+    margin-right: 16px;
+    border-radius: 50%;
+  }
+}
+
+.university-job-detail__card {
+  display: grid;
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, 230px);
+  justify-content: flex-start;
+}
+
+.job-applying-container {
+  width: 100%;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 705px) {
+  .university-job-detail__card {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.detail-website {
+  display: block !important;
+}
+
+.fix-fontSize {
+  font-size: 17px !important;
+    margin-bottom: 8px;
+}

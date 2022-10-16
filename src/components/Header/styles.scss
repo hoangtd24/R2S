@@ -1,0 +1,58 @@
+@use "../../assets/styles/" as *;
+
+.container {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+  background-color: #f6f6f6;
+  z-index: 99;
+  box-shadow: 0 2px 2px -2px gray;
+}
+.config {
+  padding: 0px 20px;
+}
+
+.logo__home {
+  text-align: none;
+  color: black;
+}
+.login__home {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.login__home-sign-in {
+  font-family: $f-family-0;
+  color: $color-black-0;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 12px;
+}
+
+.login__home-register {
+  font-family: $f-family-0;
+  color: $color-gray;
+  padding: 10px 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+}
+
+@media (max-width: 740px) {
+  .login__home {
+    display: block !important;
+    padding: 5.5px 0;
+  }
+  .login__home-sign-in {
+    display: block;
+    text-align: center;
+    padding: 0 0 6px 0;
+  }
+  .login__home-register {
+    height: 40px !important;
+  }
+}

@@ -1,0 +1,282 @@
+@use "../../../assets/styles/index.scss" as *;
+
+.form__container {
+  margin: auto;
+  padding: 30px;
+  width: 60%;
+  background-color: $color-white-0;
+  border: 0.5px solid #dedede;
+}
+
+.partner-post {
+  &__container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    height: max-content;
+    margin-top: 80px;
+    margin-bottom: 200px;
+
+    .custom-input .custom-input__textfield input {
+      font-family: "Public Sans", sans-serif;
+      border: 1px solid $primary-color;
+      border-radius: 2px;
+      width: 100%;
+      padding: 21px 12px;
+      color: #444444;
+
+      &:hover {
+        border: 1px solid $primary-color;
+        box-shadow: $primary-color-1 0 3px 8px;
+      }
+    }
+
+    .custom-input .custom-input__textfield textarea {
+      font-family: "Public Sans", sans-serif;
+      border: 1px solid $primary-color !important;
+      border-radius: 2px;
+      width: 100%;
+      padding: 20px 12px;
+
+      &:hover {
+        border: 1px solid $primary-color;
+        box-shadow: $primary-color-1 0 3px 8px;
+      }
+    }
+  }
+
+  &__form {
+    margin: auto;
+    background-color: $color-white-0;
+    width: 80%;
+
+    .row-3-col {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 35px;
+
+      .partner-post__select-location {
+        flex-basis: 32%;
+      }
+
+      div.custom-input {
+        margin-top: 0;
+        flex-basis: 28%;
+
+        input {
+          height: 45px !important;
+        }
+      }
+
+      > .custom-input {
+        margin: 0;
+      }
+    }
+
+    .partner-post-title {
+      margin-bottom: 35px;
+    }
+
+    .row-2-col {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 35px;
+
+      > .partner-post__select {
+        flex-basis: 49%;
+      }
+
+      > div.custom-input {
+        flex-basis: 49%;
+        margin: 0;
+
+        input {
+          height: 45px;
+        }
+      }
+    }
+
+    .partner-post__select {
+      flex-basis: 33.33%;
+
+      > .custom-input {
+        margin: 0 0 35px 0;
+      }
+    }
+
+    .partner-post__textarea {
+      margin: 25px 0px;
+
+      textarea {
+        font-family: "Public Sans", sans-serif;
+        border: 1px solid $primary-color;
+        border-radius: 2px;
+        height: 150px;
+      }
+    }
+    .partner-post__input {
+      flex: 1;
+      margin-right: 12px;
+    }
+
+    .partner-post__action {
+      display: flex;
+      justify-content: right;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+
+    & svg {
+      color: $primary-color;
+    }
+
+    h2 {
+      color: $primary-color;
+      padding-left: 15px;
+    }
+  }
+
+  &__heading {
+    margin-top: 25px;
+  }
+
+  &__salary-range {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .custom-input {
+      width: 49%;
+      margin: 0;
+
+      &__textfield {
+        input {
+          height: 45px;
+        }
+      }
+    }
+  }
+  .custom-select__textfield {
+    margin-top: 7px;
+  }
+}
+
+.partner-post__sub-description {
+  margin-top: 2px;
+  font-size: 12px;
+  font-style: italic;
+  color: #999;
+}
+
+input#title {
+  height: 20px;
+}
+
+label {
+  font-family: "Public Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #29303b;
+}
+
+.salary-select-field {
+  width: 100%;
+}
+
+.description-btn-post-partner {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: flex-end;
+  font-style: italic;
+  color: $primary-color;
+  float: right;
+
+  &:hover {
+    color: #000;
+    cursor: pointer;
+  }
+}
+
+.description-confirm-sample-btn {
+  &:hover {
+    color: $color-white-0;
+    background-color: $primary-color;
+    transition: 0.3s ease;
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1260px) {
+  .form__container {
+    width: 80%;
+  }
+  .partner-post {
+    &__form {
+      width: 100%;
+    }
+  }
+  #max-salary {
+    margin-left: 35px;
+  }
+}
+
+.title-requirement {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: right;
+  margin-top: 16px;
+}
+
+.field-requirment {
+  color: red;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+// responsive Moblie
+@media only screen and (max-width: 46.1875em) {
+  .form__container {
+    margin: 0;
+    padding: 0;
+  }
+  .partner-post {
+    &__form {
+      width: 100%;
+      padding: 15px 10px;
+    }
+    &__heading {
+      margin: 0 0 15px;
+      h2 {
+        font-size: 20px;
+        padding-left: 10px;
+      }
+    }
+  }
+  .partner-post-title,
+  .title-requirement,
+  .partner-post__select,
+  .partner-post__input {
+    margin: 0 0 15px !important;
+  }
+  .partner-post__textarea {
+    margin-bottom: 25px;
+  }
+
+  .partner-post__form .row-2-col {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .partner-post__textarea-description {
+    margin-bottom: 20px;
+  }
+  .partner-post__action {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,18 @@
+@use '../../../../assets/styles' as *;
+
+.company-table__hyperlink {
+  color: #000;
+
+  &:hover {
+    color: $color-blue;
+  }
+}
+
+.company-table__select {
+  padding: 7px 5px;
+  border: 1px solid $primary-color;
+  border-radius: 3px;
+  &:focus {
+    border: 2px solid $primary-color;
+  }
+}

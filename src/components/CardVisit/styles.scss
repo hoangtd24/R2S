@@ -1,0 +1,116 @@
+@use "../../assets/styles/" as *;
+
+.scroll {
+  // overflow-y: scroll;
+  height: 50vh;
+}
+
+.visit__card {
+  // margin-left: 32px;
+  border: 2px solid $primary-color;
+  &-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    width: 90px;
+    height: 60px;
+    border-radius: 8px;
+  }
+
+  &-nameComapy {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    margin-top: 16px;
+    height: 29px;
+    left: 155px;
+    top: 126px;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 29px;
+
+    display: -webkit-box;
+    // line-height: 1.3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* identical to box height */
+  }
+
+  &-detail {
+    left: 32px;
+    top: 183px;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+  }
+}
+
+.config__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 1px;
+  gap: 12px;
+  margin-bottom: 6px;
+  font-family: "Public Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  &-icon {
+    color: $primary-color;
+  }
+}
+
+.config__info:hover {
+  color: $primary-color;
+}
+.config-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll::-webkit-scrollbar {
+  // display: none;
+}
+
+// responsive detail_home
+
+@media (min-width: 740px) and (max-width: 1024px) {
+  .config__arow-back {
+    display: none;
+  }
+  .scroll__onTablet-hide {
+    overflow-y: hidden;
+    // height: fit-content;
+  }
+  .visit__card__onTablet {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 740px) {
+  .config__arow-back {
+    display: none;
+  }
+  .scroll__onTablet-hide {
+    overflow-y: hidden !important;
+    // height: auto !important;
+  }
+  .visit__card__onTablet {
+    margin-left: 0;
+  }
+}

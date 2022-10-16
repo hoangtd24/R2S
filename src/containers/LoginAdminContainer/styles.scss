@@ -1,0 +1,34 @@
+@use "../../assets/styles/" as *;
+.login-admin-container {
+  display: flex;
+  justify-content: center;
+
+  .form-wrapper {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    display: flex;
+    border-radius: 10px;
+    max-width: 800px;
+    overflow: hidden;
+    .login-admin-left {
+      position: relative;
+      width: 50%;
+      background-color: $primary-color;
+      .welcome {
+        padding: 5rem 6rem 0 3rem;
+        text-align: left;
+        color: #fff;
+        word-wrap: break-word;
+      }
+      .img {
+        position: absolute;
+        bottom: 0;
+        transform: translate(5% ,-20%);
+      }
+    }
+    .login-admin-right {
+      width: 50%;
+      padding: 5rem 2rem;
+      background-color: white;
+    }
+  }
+}

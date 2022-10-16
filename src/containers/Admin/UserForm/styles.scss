@@ -1,0 +1,43 @@
+@use "../../../assets/styles/" as *;
+
+.user-form {
+  padding: 10px 20px;
+  min-height: 500px;
+  min-width: 800px;
+
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+
+  &__avatar {
+    width: 40%;
+
+    .avatar-input {
+      margin: 0 !important;
+    }
+  }
+
+  &__input-infor {
+    width: 60%;
+  }
+
+  &__input-item {
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+}
+
+.user-form__error {
+  margin-top: 20px;
+  color: $color-red;
+  font-size: $fs-13;
+}

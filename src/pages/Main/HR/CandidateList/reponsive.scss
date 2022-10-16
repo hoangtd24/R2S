@@ -1,0 +1,16 @@
+// mobile
+@media only screen and(max-width : 992px) {
+
+    .candidate-card__wrapper {
+        flex-direction: column;
+        align-items: center;
+
+        .candidate-card__infor {
+            margin-top: 1rem;
+        }
+    }
+
+    .candidate-list__wrapper {
+        min-width: 300px;
+    }
+}

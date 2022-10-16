@@ -1,0 +1,20 @@
+@use "../../assets/styles/" as *;
+
+.register-layout {
+  width: 100%;
+  min-height: 100vh;
+  height: max-content;
+  background-color: $primary-color;
+  // padding: 36px;
+  text-align: center;
+
+  .register-container {
+    width: 70%;
+    min-height: 72vh;
+  }
+}
+
+.register-container-wrapper {
+  padding: 110px 0px;
+  background-color: $primary-color-background;
+}

@@ -1,0 +1,22 @@
+@use "../../assets/styles" as *;
+
+.switch-btn {
+  &__wrapper {
+    .MuiTypography-root {
+      font-size: 14px;
+      font-family: $f-family;
+      font-weight: 600;
+    }
+
+    .MuiButtonBase-root.Mui-checked {
+      color: $primary-color;
+    }
+
+    .MuiSwitch-root.MuiSwitch-sizeMedium {
+      .MuiSwitch-track {
+        background-color: $primary-color;
+        opacity: 0.38;
+      }
+    }
+  }
+}

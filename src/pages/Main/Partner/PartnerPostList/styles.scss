@@ -1,0 +1,106 @@
+@use "../../../../assets/styles/" as *;
+
+.partner-post__wrapper {
+  min-height: 100vh;
+  .partner-post__list-bt {
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+    margin-bottom: 24px;
+  }
+
+  .partner-post-list__content {
+    display: flex;
+    padding: 0 50px;
+
+    .partner-post-list__statistic {
+      flex-basis: 40%;
+    }
+
+    .filter-panel-home__wrapper {
+      flex-basis: 60%;
+
+      .tabPanel {
+        height: 78vh !important;
+        border-radius: 0px !important;
+      }
+    }
+
+    .hrpost__list {
+      display: flex;
+      min-height: 500px;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+  }
+
+  // .filter-panel-home__wrapper .filter-panel-list-tabs {
+  //   &#simple-tab-1 {
+  //     background-color: #666 !important;
+  //   }
+  // }
+}
+.partner-postList__pagination {
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+  margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 740px) {
+  .partner-post-list__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter-panel-home__wrapper {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 860px) {
+  .partner-post__wrapper {
+    padding: 50px;
+  }
+  .partner-post-list__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter-panel-home__wrapper {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 860px) and (max-width: 968px) {
+  .partner-post__wrapper {
+    padding: 50px;
+  }
+  .partner-post-list__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter-panel-home__wrapper {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 968px) and (max-width: 1090px) {
+  .partner-post__wrapper {
+    padding: 100px;
+  }
+  .partner-post-list__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter-panel-home__wrapper {
+    padding-left: 15px;
+  }
+}

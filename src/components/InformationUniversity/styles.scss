@@ -1,0 +1,45 @@
+@use '../../assets/styles/' as *;
+
+
+.detail__card-3-partner {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.detail__card-3-item-partner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail__card-list-students-link {
+    width: 220px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+}
+
+.list-students-file {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        color: rgba(255, 255, 255, 0.815) !important;
+    }
+}
+
+.detail__card-5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      p {
+        font-size: 13px;
+        margin-bottom: 8px;
+      }
+    }
+  }

@@ -1,0 +1,169 @@
+@use "../../assets/styles/" as *;
+
+.detail__card {
+  background-color: $color-white-0;
+  border-radius: 6px;
+  padding: $pd-2;
+  overflow-y: scroll;
+  height: 750px;
+  margin-bottom: 15px;
+
+  .detail__card-1 {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    .detail__card-intro {
+      display: flex;
+      align-items: center;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        h2 {
+          font-size: 20px;
+        }
+        .name-company {
+          font-size: 12px;
+        }
+      }
+      .detail__card__logo {
+        margin-right: 15px;
+        width: 72px;
+        height: 60px;
+        left: 30px;
+        top: 30px;
+      }
+    }
+  }
+
+  .detail__card-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px 0px;
+    .tag-name {
+      display: flex;
+      &__name {
+        font-size: $fs-16;
+      }
+    }
+  }
+
+  .detail__card-3 {
+    font-style: normal;
+    font-size: 21px;
+
+    &-item {
+      font-size: 16px;
+
+      &-name {
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        padding-bottom: 20px;
+
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .time-line {
+        font-family: $f-family;
+      }
+    }
+  }
+
+  .line::after {
+    background-color: $color-gray-3;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .detail__card-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px !important;
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-icon {
+        color: $primary-color;
+      }
+      &-info {
+        margin-left: 12px;
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .detail__card-5 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 30px;
+
+    div {
+      p {
+        font-size: 13px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.MuiInputBase-root {
+  font-size: 14px !important;
+}
+
+.detail__card::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 360px) and (max-width: 1200px) {
+  .containerDetailCard-home {
+    // display: none;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+  .detail__card-ontablet {
+    background-color: #fff;
+    border-radius: 6px;
+    border: none;
+    padding: 20px;
+    overflow-y: hidden;
+    height: fit-content;
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 740px) {
+  .detail__card-ontablet {
+    background-color: #fff;
+    border-radius: 6px;
+    border: none;
+    padding: 20px;
+    overflow-y: hidden;
+    height: fit-content;
+    margin-bottom: 15px;
+  }
+  .button__candidate-onMobile {
+    display: none !important;
+  }
+  .detail__card .detail__card-4 {
+    display: block !important;
+    &-item {
+      justify-content: flex-start !important;
+    }
+  }
+}

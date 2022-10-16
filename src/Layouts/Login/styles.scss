@@ -1,0 +1,34 @@
+@use "../../assets/styles" as *;
+
+.login-layout {
+  width: 100%;
+  min-height: 100vh;
+  height: max-content;
+  background-color: $primary-color;
+  text-align: center;
+}
+
+.login-container-wrapper {
+  padding: 110px 0px;
+  background-color: $primary-color-background;
+}
+
+.login-container__modal {
+  &--content {
+    float: right;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 46.1875em) {
+
+  .login-container__modal {
+    &--content {
+      float: none;
+      margin-top: 24px;
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

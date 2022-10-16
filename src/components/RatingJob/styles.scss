@@ -1,0 +1,13 @@
+.allRating {
+    border : 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.9rem;
+    margin-bottom: 4px;
+    .ratingfor {
+        padding: 0 1rem;
+        color: #ccc;
+    }
+    .ratingcomment {
+        padding: 0.9rem 0;
+    }
+}

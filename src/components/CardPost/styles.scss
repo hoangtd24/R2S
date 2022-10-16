@@ -1,0 +1,114 @@
+@use "../../assets/styles/" as *;
+
+.card-post__container {
+  width: 100%;
+  min-height: 270px;
+  background: #ffff;
+  padding: 24px 32px;
+  border: 0.5px solid #dedede;
+  margin-bottom: 20px;
+  position: relative;
+
+  .card-post__job-name {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .card-post__created {
+      margin-bottom: 10px;
+      font-size: 13px;
+      text-align: right;
+      font-weight: 400;
+    }
+  }
+
+  .card-post__company-info-detail {
+    display: flex;
+    font-size: 13px;
+
+    .company-info-detail__img {
+      width: 40px;
+      height: 40px;
+      margin-right: 16px;
+      object-fit: contain;
+    }
+
+    .company__name {
+      font-weight: 700;
+    }
+
+    .company-info-detail {
+      &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+    }
+  }
+
+  .card-post__amount {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 16px 0;
+  }
+
+  .card-post__time {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+
+  .card-post__action {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .MuiSvgIcon-root {
+      color: #000000;
+    }
+  }
+}
+
+.card-post__modal {
+  .MuiPaper-root {
+    max-width: unset !important;
+    width: auto !important;
+  }
+}
+.confirmation-date__wrapper {
+  .confirmation-date__form {
+    .custom-input .custom-input__textfield input {
+      font-family: "Public Sans", sans-serif;
+      border: 1px solid $primary-color;
+      border-radius: 2px;
+      width: 100%;
+      padding: 20px 12px;
+      height: 45px;
+      color: #444444;
+      font-size: 13px;
+    }
+  }
+  .confirmation-date__btns {
+    display: flex;
+    .button {
+      padding: 14px 8px;
+
+      p {
+        margin: 0;
+      }
+    }
+    &--add-job {
+      margin-right: 6px;
+    }
+    &-cancel {
+      padding: 10px !important;
+    }
+  }
+}

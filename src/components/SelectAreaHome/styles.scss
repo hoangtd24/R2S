@@ -1,0 +1,38 @@
+@use "../../assets/styles/" as *;
+
+.select-area {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: $primary-color;
+  padding: 0 2px !important;
+
+  & path {
+    color: $primary-color;
+  }
+}
+
+.MuiSelect-outlined {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: $color-black-0;
+  outline: none !important;
+  padding-right: 0px;
+}
+
+.config-select {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  width: 70%;
+  position: relative;
+}
+
+.text-location {
+  margin-right: 10px;
+  width: 80px;
+}
